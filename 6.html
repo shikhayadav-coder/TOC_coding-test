@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  const paragraph = "JavaScript was created by Brendan Eich in 1995 to give web pages a little more pep than the <blink> tag could provide. Today it has far more powerful uses and companies like Google and Facebook use JavaScript to build complex desktop-like web applications. With the launch of Node.js, It has also become one of the most popular languages for building server-side software. Today, even the web isn’t big enough to contain JavaScript’s versatility. I believe that you are already aware of these facts and this has made you land on this JavaScript Interview Questions article.";
+
+let count = 0;
+let indexPositions = [];
+
+for(let i = 0; i < paragraph.length; i++) {
+    if(paragraph[i] === "a") {
+        count++;
+        indexPositions.push(i);
+    }
+}
+
+console.log(`Number of times "a" is repeated: ${count}`);
+console.log(`Index positions of "a": ${indexPositions}`);
+  </script>
+</body>
+</html>
